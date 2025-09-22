@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h2>Selamat datang <%= username %>
+    </h2>
+    <p>
+        <%= quote %>
+    </p>
+    <a href="/dashboard/settings">Setting</a> |
+    <a href="/logout">Logout</a>
+    <form method="POST" action="/dashboard/delete">
+        <button onclick="return confirm('Yakin hapus akun?')">Hapus Akun</button>
+    </form>
+
+</body>
+
+</html>
